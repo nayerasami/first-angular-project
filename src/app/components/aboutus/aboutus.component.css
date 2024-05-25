@@ -1,0 +1,30 @@
+.about{
+
+    height: 90vh;
+    background-color: #b9cab1;
+}
+.floating-img {
+    width: 375px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    animation: float 6s ease-in-out infinite; /* Adjust duration */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px); 
+}
+}
+.productImg {
+width: 68px;
+height: 72px;
+}
